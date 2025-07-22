@@ -22,9 +22,11 @@ public class Products {
 	public void setPrice(int price) {
 		this.price = price;
 	}
-	public static void displayDetails() {
-		
+	@Override
+	public String toString() {
+		return "Products [id=" + id + ", productName=" + productName + ", price=" + price + "]";
 	}
-	}
+	
+}
 
 

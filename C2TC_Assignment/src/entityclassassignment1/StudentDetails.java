@@ -1,31 +1,23 @@
 package entityclassassignment1;
 
-import java.util.Scanner;
-
 public class StudentDetails {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        Student[] students = new Student[3];
-
-        for (int i = 0; i < 3; i++) {
-            students[i] = new Student();
-            System.out.println("Enter details for Student " + (i + 1) + ":");
-            System.out.print("Roll No: ");
-            students[i].setRollNo(scanner.nextInt());
-            scanner.nextLine(); 
-            System.out.print("Name   : ");
-            students[i].setName(scanner.nextLine());
-            System.out.print("Age    : ");
-            students[i].setMobileNo(scanner.nextInt());
-            scanner.nextLine();
-            System.out.println();
+        Student s1 = new Student();
+        s1.setRollNo(1);
+        s1.setName("Prat");
+        s1.setMobileNo(111111);
+        System.out.println(s1);
+        
+        Student s2 = new Student();
+        s2.setRollNo(2);
+        s2.setName("diliip");
+        s2.setMobileNo(222222);
+        System.out.println(s2);
+        
+        Student s3 = new Student();
+        s3.setRollNo(3);
+        s3.setName("deva");
+        s3.setMobileNo(333333);
+        System.out.println(s3);
         }
-
-        System.out.println("=== Student Details ===");
-        for (Student student : students) {
-            student.displayDetails();
-        }
-
-        scanner.close();
     }
-}

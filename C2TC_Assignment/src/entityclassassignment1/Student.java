@@ -4,8 +4,6 @@ public class Student {
 	private int rollNo;
     private String Name;
     private int mobileNo;
-	public Student() {
-	}
 	public int getRollNo() {
 		return rollNo;
 	}
@@ -24,11 +22,9 @@ public class Student {
 	public void setMobileNo(int mobileNo) {
 		this.mobileNo = mobileNo;
 	}
-	public void displayDetails() {
-		
+	@Override
+	public String toString() {
+		return "Student [rollNo=" + rollNo + ", Name=" + Name + ", mobileNo=" + mobileNo + "]";
 	}
-
-    
 }
-
 
