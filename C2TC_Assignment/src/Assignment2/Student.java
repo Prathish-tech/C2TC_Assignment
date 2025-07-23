@@ -1,9 +1,9 @@
 package Assignment2;
 
 public class Student {
-	
-	// Default constructor
+	//Default Constructor  
 	public Student() {
-        System.out.println("Student object is created");
-    }
+	        System.out.println("Student object is created");
+	    }
+
 }
